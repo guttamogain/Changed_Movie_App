@@ -1,0 +1,26 @@
+<div class="container" *ngIf="nowPlayingMovies.length > 0" >
+  <h4 class="text-center" >Top Playing Movies  </h4>
+  <br>
+  <div class="row card-group">
+    <div class="col-4" *ngFor="let movie of nowPlayingMovies">
+      <div class="card text-center">
+        <a (click)="goToDetail(movie.id)">
+          <div class="media">
+            <img class="d-flex mr-3 img-responsive" 
+            src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="{{movie.title}}" >
+            
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+
+<!--
+  <div class="row">
+        <div class="col-md-6">
+          <img *ngIf="movie.poster_path" class="img-thumbnail img-responsive" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}">
+           <img *ngIf="!movie.poster_path" class="img-thumbnail img-responsive" src="http://ddbu.billiardport.com/img/posters/no_poster_available.jpg"> 
+        </div>
+-->

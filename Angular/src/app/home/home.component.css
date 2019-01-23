@@ -1,0 +1,12 @@
+.card {
+	border: 0ex;
+	background-color: rgb(47, 54, 54);
+}
+.d-flex {
+	height: auto;
+	width: 100%;
+}
+
+.text-center {
+	color: white;
+}
